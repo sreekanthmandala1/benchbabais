@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EightComponent } from './components/eight/eight.component';
 import { FiveComponent } from './components/five/five.component';
 import { FourComponent } from './components/four/four.component';
+import { HomeComponent } from './components/home/home.component';
 import { NineComponent } from './components/nine/nine.component';
 import { OneComponent } from './components/one/one.component';
 import { SevenComponent } from './components/seven/seven.component';
@@ -12,6 +13,7 @@ import { ThreeComponent } from './components/three/three.component';
 import { TwoComponent } from './components/two/two.component';
 
 const routes: Routes = [
+  {path:'', component:HomeComponent},
   {path:'one', component:OneComponent},
   {path:'two', component:TwoComponent},
   {path:'three', component:ThreeComponent},

@@ -1,1 +1,33 @@
-<p>one works!</p>
+<div class="container">
+    <button class="btn-warning" (click)="clicked()">Toggle Images</button>
+    <table class="table table-striped ">
+        <tr>
+            <th>Student Name</th>
+            <th>Student Photo</th>
+            <th>Student Id</th>
+            <th>Student Result</th>
+        </tr>
+        <tr *ngFor = 'let student of students'>
+       <td> {{student.studentname}} </td>
+       <td>
+           <img *ngIf = "imgtgl;else hot"
+           [src]='student.imagepath'
+           [style.width.px]='imagewidth'
+           [style.height.px] = 'imageheight'
+           [style.border-radius.px]='borderrad'>
+    <ng-template #hot> <p>Hidden Image</p> </ng-template>
+       </td>
+       <td> {{student.studentid}} </td>
+       <!-- <td><p [ng-style]="{ 'background-color' : (student.result.value == 'Pass') ? 'Red' : 'Green' }">{{student.result}} </p> </td> -->
+       <td>{{student.result}} </td>
+     
+
+    
+        </tr>
+    </table></div>
+    <div class="form-control">
+<label for="textboxie">Enter text here :</label>
+<input id="textboxie" [(ngModel)]="txtchck"/>
+<p>{{txtchck}}</p>
+
+    </div>
