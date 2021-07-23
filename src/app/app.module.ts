@@ -14,6 +14,11 @@ import { EightComponent } from './components/eight/eight.component';
 import { NineComponent } from './components/nine/nine.component';
 import { TenComponent } from './components/ten/ten.component';
 import { HomeComponent } from './components/home/home.component';
+import { ElevenComponent } from './components/eleven/eleven.component';
+import { TwelveComponent } from './components/twelve/twelve.component';
+import { ThirteenComponent } from './components/thirteen/thirteen.component';
+import { FourteenComponent } from './components/fourteen/fourteen.component';
+import { FifteenComponent } from './components/fifteen/fifteen.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { HomeComponent } from './components/home/home.component';
     EightComponent,
     NineComponent,
     TenComponent,
-    HomeComponent
+    HomeComponent,
+    ElevenComponent,
+    TwelveComponent,
+    ThirteenComponent,
+    FourteenComponent,
+    FifteenComponent
   ],
   imports: [
     BrowserModule,
